@@ -1,0 +1,13 @@
+GEM
+  specs:
+    i18n (0.5.0)
+    money (3.6.1)
+      i18n (~> 0.4)
+    shoulda (2.11.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  money
+  shoulda

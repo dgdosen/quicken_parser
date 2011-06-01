@@ -22,14 +22,14 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<FooBarWidget-money>, ["~> 2"])
-      s.add_development_dependency(%q<francois-shoulda>, ["~> 2.0"])
+      s.add_runtime_dependency(%q<Fmoney>)
+      s.add_development_dependency(%q<shoulda>)
     else
-      s.add_dependency(%q<FooBarWidget-money>, ["~> 2"])
-      s.add_dependency(%q<francois-shoulda>, ["~> 2.0"])
+      s.add_dependency(%q<money>)
+      s.add_dependency(%q<shoulda>)
     end
   else
-    s.add_dependency(%q<FooBarWidget-money>, ["~> 2"])
-    s.add_dependency(%q<francois-shoulda>, ["~> 2.0"])
+    s.add_dependency(%q<money>)
+    s.add_dependency(%q<shoulda>)
   end
 end
