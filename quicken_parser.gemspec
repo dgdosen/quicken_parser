@@ -17,19 +17,6 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.2}
   s.summary = %q{This is a quick'n'dirty gem to parse Quicken QFX format.}
 
-  if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
-    s.specification_version = 3
-
-    if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<Fmoney>)
-      s.add_development_dependency(%q<shoulda>)
-    else
-      s.add_dependency(%q<money>)
-      s.add_dependency(%q<shoulda>)
-    end
-  else
-    s.add_dependency(%q<money>)
-    s.add_dependency(%q<shoulda>)
-  end
+  s.add_dependency "money"
+  s.add_dependency "shoulda"
 end
